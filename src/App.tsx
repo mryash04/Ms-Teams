@@ -3,8 +3,8 @@ import * as microsoftTeams from "@microsoft/teams-js";
 import { Provider, teamsTheme, Grid, Segment } from "@fluentui/react-northstar";
 import { themeNames } from "@fluentui/react-teams";
 import "./App.css";
-import HomeScreen from "./components/HomeScreen";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
  
 class App extends Component {
   componentDidMount() {
@@ -60,7 +60,7 @@ class App extends Component {
       <Provider theme={teamsTheme}>
         <div className="App">
           <Navbar />
-          <HomeScreen />
+          <Home />
         </div>
       </Provider>
     );
